@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de piedra, papel, tijera, lagarto, spock</title>
+</head>
+<body>
+    <script>
+        /* 
+        1. piedra
+        2. papel
+        3. tijeras
+        4. lagarto
+        5. spock
+        */
+    
+       var Sets = prompt("Ingresa cuantos sets quieres jugar");
+
+       for(let i = 0; i < Sets; i++) {
+        var puntuacionSetJugador = 0;
+        var puntuacionSetMaquina = 0;
+           for(let j = 0; j < 3; j++) {
+            var puntuacionJugador = 0;
+            var puntuacionMaquina = 0;
+            document.write("<br>")
+             var manoDeJugador = parseInt( prompt("Elige: 1. Piedra 2. Papel 3. Tijeras 4. Lagarto 5. Spock") );
+             var manoDelCPU = Math.floor(Math.random() * 5) + 1;
+
+             alert("Mano del jugadodor: ");
+             alert(manoDeJugador);
+             alert("Mano del CPU: ");
+             alert(manoDelCPU);
+
+             if (manoDeJugador == 3 && manoDelCPU == 2) {
+                 alert("Gana jugador")
+                 puntuacionJugador++
+             } 
+             if (manoDeJugador == 2 && manoDelCPU == 3) {
+                 alert("Gana CPU")
+                 puntuacionMaquina++
+             } 
+             if (manoDeJugador == 2 && manoDelCPU == 1) {
+                 alert("Gana jugador")
+             } 
+             if (manoDeJugador == 1 && manoDelCPU == 2) {
+                 alert("Gana CPU")
+             }
+
+            
+             alert("puntuacion jugador: " + puntuacionJugador + "puntuacion CPU: " + puntuacionMaquina)
+            }
+        } 
+    </script> 
+</body>
+</html>
