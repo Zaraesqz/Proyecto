@@ -19,104 +19,104 @@
        var Sets = prompt("Ingresa cuantos sets quieres jugar");
 
        for(let i = 0; i < Sets; i++) {
-        var puntuacionSetJugador = 0;
-        var puntuacionSetMaquina = 0;
-        var puntuacionJugador = 0;
-        var puntuacionMaquina = 0;
-           for(let j = 0; j < 3; j++) {
+            var puntuacionSetJugador = 0;
+            var puntuacionSetMaquina = 0;
+            var puntuacionJugador = 0;
+            var puntuacionMaquina = 0;
+                for(let j = 0; j < 3; j++) {
 
-            document.write("<br>")
-             var manoDeJugador = parseInt( prompt("Elige: 1. Piedra 2. Papel 3. Tijeras 4. Lagarto 5. Spock") );
-             var manoDelCPU = Math.floor(Math.random() * 5) + 1;
+                    document.write("<br>")
+                        var manoDeJugador = parseInt( prompt("Elige: 1. Piedra 2. Papel 3. Tijeras 4. Lagarto 5. Spock") );
+                        var manoDelCPU = Math.floor(Math.random() * 5) + 1;
 
-             alert("Mano del jugadodor: ");
-             alert(manoDeJugador);
-             alert("Mano del CPU: ");
-             alert(manoDelCPU);
+                     alert("Mano del jugadodor: ");
+                     alert(manoDeJugador);
+                     alert("Mano del CPU: ");
+                     alert(manoDelCPU);
 
-             if (manoDeJugador == 1 && manoDelCPU == 2) {
-                 alert("Gana CPU")
-                 puntuacionMaquina++
-             } 
-             if (manoDeJugador == 2 && manoDelCPU == 1) {
-                 alert("Gana jugador")
-                 puntuacionJugador++
-             } 
-             if (manoDeJugador == 1 && manoDelCPU == 3) {
-                 alert("Gana jugador")
-                 puntuacionJugador++
-             } 
-             if (manoDeJugador == 3 && manoDelCPU == 1) {
-                 alert("Gana CPU")
-                 puntuacionMaquina++
-             }
-             if (manoDeJugador == 1 && manoDelCPU == 4) {
-                 alert("Gana jugador")
-                 puntuacionJugador++
-             } 
-             if (manoDeJugador == 4 && manoDelCPU == 1) {
-                 alert("Gana CPU")
-                 puntuacionMaquina++
-             } 
-             if (manoDeJugador == 1 && manoDelCPU == 5) {
-                 alert("Gana CPU")
-                 puntuacionMaquina++
-             } 
-             if (manoDeJugador == 5 && manoDelCPU == 1) {
-                 alert("Gana jugador")
-                 puntuacionJugador++
-             }
-             if (manoDeJugador == 2 && manoDelCPU == 3) {
-                 alert("Gana CPU")
-                 puntuacionMaquina++
-             } 
-             if (manoDeJugador == 3 && manoDelCPU == 2) {
-                 alert("Gana jugador")
-                 puntuacionJugador++
-             } 
-             if (manoDeJugador == 2 && manoDelCPU == 4) {
-                 alert("Gana CPU")
-                 puntuacionMaquina++
-             } 
-             if (manoDeJugador == 4 && manoDelCPU == 2) {
-                 alert("Gana jugador")
-                 puntuacionJugador++
-             }
-             if (manoDeJugador == 2 && manoDelCPU == 5) {
-                 alert("Gana jugador")
-                 puntuacionJugador++
-             } 
-             if (manoDeJugador == 5 && manoDelCPU == 2) {
-                 alert("Gana CPU")
-                 puntuacionMaquina++
-             } 
-             if (manoDeJugador == 3 && manoDelCPU == 4) {
-                 alert("Gana jugador")
-                 puntuacionJugador++
-             } 
-             if (manoDeJugador == 4 && manoDelCPU == 3) {
-                 alert("Gana CPU")
-                 puntuacionMaquina++
-             }
-             if(manoDeJugador == 3 && manoDelCPU == 5) {
-                 alert("Gana CPU")
-                 puntuacionMaquina++
-             }
-             if(manoDeJugador == 5 && manoDelCPU == 3) {
-                 alert("Gana jugador")
-                 puntuacionJugador++
-             }
-             if(manoDeJugador == 4 && manoDelCPU == 5) {
-                 alert("Gana jugaador")
-                 puntuacionJugador++
-             }
-             if(manoDeJugador == 5 && manoDelCPU == 4) {
-                 alert("Gana CPU")
-                 puntuacionMaquina++
-             }
+                        if (manoDeJugador == 1 && manoDelCPU == 2) {
+                            alert("Gana CPU")
+                            puntuacionMaquina++
+                        } 
+                         if (manoDeJugador == 2 && manoDelCPU == 1) {
+                            alert("Gana jugador")
+                            puntuacionJugador++
+                        } 
+                         if (manoDeJugador == 1 && manoDelCPU == 3) {
+                            alert("Gana jugador")
+                            puntuacionJugador++
+                        } 
+                         if (manoDeJugador == 3 && manoDelCPU == 1) {
+                             alert("Gana CPU")
+                             puntuacionMaquina++
+                        }
+                        if (manoDeJugador == 1 && manoDelCPU == 4) {
+                             alert("Gana jugador")
+                             puntuacionJugador++
+                        } 
+                         if (manoDeJugador == 4 && manoDelCPU == 1) {
+                             alert("Gana CPU")
+                             puntuacionMaquina++
+                        } 
+                         if (manoDeJugador == 1 && manoDelCPU == 5) {
+                             alert("Gana CPU")
+                             puntuacionMaquina++
+                        } 
+                         if (manoDeJugador == 5 && manoDelCPU == 1) {
+                             alert("Gana jugador")
+                             puntuacionJugador++
+                        }
+                         if (manoDeJugador == 2 && manoDelCPU == 3) {
+                             alert("Gana CPU")
+                             puntuacionMaquina++
+                        } 
+                         if (manoDeJugador == 3 && manoDelCPU == 2) {
+                             alert("Gana jugador")
+                             puntuacionJugador++
+                        } 
+                         if (manoDeJugador == 2 && manoDelCPU == 4) {
+                             alert("Gana CPU")
+                             puntuacionMaquina++
+                        } 
+                         if (manoDeJugador == 4 && manoDelCPU == 2) {
+                             alert("Gana jugador")
+                             puntuacionJugador++
+                        }
+                         if (manoDeJugador == 2 && manoDelCPU == 5) {
+                             alert("Gana jugador")
+                             puntuacionJugador++
+                        } 
+                         if (manoDeJugador == 5 && manoDelCPU == 2) {
+                             alert("Gana CPU")
+                             puntuacionMaquina++
+                        } 
+                         if (manoDeJugador == 3 && manoDelCPU == 4) {
+                             alert("Gana jugador")
+                             puntuacionJugador++
+                        } 
+                         if (manoDeJugador == 4 && manoDelCPU == 3) {
+                             alert("Gana CPU")
+                             puntuacionMaquina++
+                        }
+                         if(manoDeJugador == 3 && manoDelCPU == 5) {
+                             alert("Gana CPU")
+                             puntuacionMaquina++
+                        }
+                         if(manoDeJugador == 5 && manoDelCPU == 3) {
+                             alert("Gana jugador")
+                             puntuacionJugador++
+                        }
+                         if(manoDeJugador == 4 && manoDelCPU == 5) {
+                             alert("Gana jugaador")
+                             puntuacionJugador++
+                        }
+                         if(manoDeJugador == 5 && manoDelCPU == 4) {
+                             alert("Gana CPU")
+                             puntuacionMaquina++
+                    }
 
             
-             alert("puntuacion jugador: " + puntuacionJugador + " puntuacion CPU: " + puntuacionMaquina)
+                 alert("puntuacion jugador: " + puntuacionJugador + " puntuacion CPU: " + puntuacionMaquina)
              
             }
                 //si la puntuacion de jugador es mayor a la de la maquina el jugador gana el set
@@ -133,13 +133,11 @@
         
         }
       
-       
-        
-        if(puntuacionSetJugador > puntuacionSetMaquina) {
-            alert("gano jugador")
-        } else if (puntuacionSetMaquina > puntuacionSetJugador) {
-            alert("gano CPU LuZeR")
-        }
+            if(puntuacionSetJugador > puntuacionSetMaquina) {
+                alert("gano jugador")
+            } else if (puntuacionSetMaquina > puntuacionSetJugador) {
+                alert("gano CPU LuZeR")
+            }
 
     </script> 
 </body>
